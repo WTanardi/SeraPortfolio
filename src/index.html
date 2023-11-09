@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="/dist/output.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans scroll-smooth">
+    <header class="w-full bg-gray-900 h-36 flex px-16 justify-between">
+      <!-- Logo -->
+      <div class="w-80 bg-red-400 h-16 self-center">
+        <!-- <img
+          src=""
+          alt=""
+          class="w-80"
+        /> -->
+      </div>
+      <!-- Navigation Burger -->
+      <nav
+        class="cursor-pointer self-center absolute right-16 flex justify-end flex-col"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="80"
+          height="80"
+          viewBox="0 0 24 24"
+          fill="#FFFFFF"
+          stroke="white"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-menu"
+          id="navBtn"
+        >
+          <line
+            x1="4"
+            x2="20"
+            y1="12"
+            y2="12"
+          />
+          <line
+            x1="4"
+            x2="20"
+            y1="6"
+            y2="6"
+          />
+          <line
+            x1="4"
+            x2="20"
+            y1="18"
+            y2="18"
+          />
+        </svg>
+        <div
+          class="bg-gray-900 p-8 text-white text-xl text-right right-0 top-32 absolute hidden w-56"
+          id="navMenu"
+        >
+          <ul class="flex flex-col gap-8">
+            <li>
+              <a
+                href="#"
+                onclick="closeMenu()"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#graphic"
+                onclick="closeMenu()"
+              >
+                Graphic Design <br />
+                & Illustrations
+              </a>
+            </li>
+            <li>
+              <a
+                href="#motion"
+                onclick="closeMenu()"
+              >
+                Motion Graphic
+              </a>
+            </li>
+            <li>
+              <a
+                href="#aboutme"
+                onclick="closeMenu()"
+              >
+                About Me
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section
+      class="h-[800px] bg-red-500"
+      id="hero"
+    >
+      <div
+        class="container flex mx-auto gap-16 items-center justify-center h-full"
+      >
+        <!-- Hero Img -->
+        <div class="w-1/2 h-full flex items-center p-8">
+          <img
+            src="https://picsum.photos/1000
+        "
+            alt=""
+          />
+        </div>
+
+        <!-- Hero Text -->
+        <div class="flex flex-col w-1/2 text-white gap-8">
+          <h1 class="text-8xl font-semibold tracking-tight">
+            2023<br />Portfolio
+          </h1>
+          <p class="text-xl">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quam
+            odio sint expedita labore hic culpa eligendi temporibus
+            exercitationem, vel voluptatem. Provident nobis recusandae debitis
+            deleniti rem corporis minus impedit, illum velit cupiditate nam
+            eligendi explicabo eius. Perspiciatis repellendus, sint, possimus
+            quo assumenda facere non architecto ex vero culpa id.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Graphic Design & Illustrations -->
+    <section
+      class="px-16 py-20"
+      id="graphic"
+    >
+      <div class="">
+        <header class="mb-12">
+          <h2 class="text-8xl font-semibold tracking-tighter">
+            Graphic Design <br />
+            & Illustrations
+          </h2>
+        </header>
+        <!-- Gallery -->
+        <div class="flex flex-wrap items-center justify-between gap-8">
+          <img
+            src="https://picsum.photos/400"
+            alt=""
+            class="basis-1/4 flex-auto"
+          />
+          <img
+            src="https://picsum.photos/400"
+            alt=""
+            class="basis-1/4 flex-auto"
+          />
+          <img
+            src="https://picsum.photos/400"
+            alt=""
+            class="basis-1/4 flex-auto"
+          />
+          <img
+            src="https://picsum.photos/400"
+            alt=""
+            class="basis-1/4 flex-auto"
+          />
+          <img
+            src="https://picsum.photos/400"
+            alt=""
+            class="basis-1/4 flex-auto"
+          />
+          <img
+            src="https://picsum.photos/400"
+            alt=""
+            class="basis-1/4 flex-auto"
+          />
+          <img
+            src="https://picsum.photos/400"
+            alt=""
+            class="basis-1/4 flex-auto"
+          />
+          <img
+            src="https://picsum.photos/400"
+            alt=""
+            class="basis-1/4 flex-auto"
+          />
+          <img
+            src="https://picsum.photos/400"
+            alt=""
+            class="basis-1/4 flex-auto"
+          />
+          <img
+            src="https://picsum.photos/400"
+            alt=""
+            class="basis-1/4 flex-auto"
+          />
+          <img
+            src="https://picsum.photos/400"
+            alt=""
+            class="basis-1/4 flex-auto"
+          />
+          <img
+            src="https://picsum.photos/400"
+            alt=""
+            class="basis-1/4 flex-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Motion Graphics -->
+    <section
+      class="h-[600px] bg-slate-800 px-16 py-20 text-white"
+      id="motion"
+    >
+      <div class="flex items-center gap-16 h-full">
+        <header class="w-1/3">
+          <h2 class="text-8xl font-semibold tracking-tighter mb-8">
+            Motion <br />
+            Graphics
+          </h2>
+          <p class="text-xl">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+            consectetur aliquid quia totam architecto tempora dolor et nemo
+            placeat? Tenetur sunt mollitia harum itaque architecto.
+          </p>
+        </header>
+        <!-- Video -->
+        <div class="w-2/3 flex items-center h-full">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/rTqrpOLbhHQ?si=KZebVk7LxxxbPAQ_?autoplay=1&mute=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <!-- <img
+            src="https://picsum.photos/1000"
+            alt=""
+            class="aspect-video"
+          /> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About me -->
+    <section
+      class="px-16 py-20"
+      id="aboutme"
+    >
+      <div class="flex items-center gap-24">
+        <div class="w-1/2">
+          <img
+            src="https://picsum.photos/1000"
+            alt=""
+          />
+        </div>
+        <div class="w-1/2">
+          <h2 class="text-8xl font-semibold tracking-tighter mb-8">About me</h2>
+          <p class="text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores hic
+            quam error velit numquam quo unde minima voluptate molestiae. Id
+            molestias laborum at expedita tempore.
+          </p>
+          <p class="text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            dicta, quibusdam culpa in voluptatibus accusantium atque asperiores
+            itaque accusamus temporibus saepe ipsa reiciendis illum ut?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="flex justify-evenly px-16 py-20 bg-slate-800 text-white gap-16 items-center"
+    >
+      <!-- Logo -->
+      <div class="w-80 bg-red-400 h-16 basis-1/3">
+        <!-- <img
+          src=""
+          alt=""
+          class="w-80"
+        /> -->
+      </div>
+      <p class="basis-1/3">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
+        quaerat temporibus eaque quas laudantium amet aliquid, maxime vero,
+        dolorem voluptatem aperiam! Nesciunt aut id corporis.
+      </p>
+      <p class="basis-1/3">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+        voluptate quisquam sit. Perferendis laborum pariatur libero eligendi
+        perspiciatis, vero laboriosam consequuntur eaque, in, praesentium
+        voluptas.
+      </p>
+    </footer>
+
+    <!-- Navigate te Top button -->
+    <div class="fixed right-8 bottom-8 cursor-pointer">
+      <a href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="64"
+          height="64"
+          viewBox="0 0 24 24"
+          fill="white"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-arrow-up-circle"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+          />
+          <path d="m16 12-4-4-4 4" />
+          <path d="M12 16V8" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Javascript -->
+    <script>
+      // Nav menu
+      const navBtn = document.getElementById('navBtn');
+      const navMenu = document.getElementById('navMenu');
+
+      navBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+      });
+
+      const closeMenu = () => {
+        navMenu.classList.add('hidden');
+      };
+    </script>
+  </body>
+</html>
