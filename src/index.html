@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+  lang="en"
+  class="scroll-smooth"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -9,16 +12,14 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
-      href="/dist/output.css"
       rel="stylesheet"
+      href="./style.css"
     />
   </head>
-  <body class="font-sans scroll-smooth">
-    <header
-      class="w-full bg-gray-900 py-8 lg:py-16 flex px-8 lg:px-16 justify-between"
-    >
+  <body class="font-sans">
+    <header class="w-full bg-gray-900 py-8 flex px-8 lg:px-16 justify-between">
       <!-- Logo -->
-      <div class="w-40 h-8 lg:w-80 bg-red-400 lg:h-16 self-center">
+      <div class="w-40 h-8 lg:w-80 bg-red-400 xl:h-16 self-center">
         <!-- <img
           src=""
           alt=""
@@ -38,7 +39,7 @@
           stroke-width="3"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="lucide lucide-menu w-12"
+          class="lucide lucide-menu w-12 xl:w-20"
           id="navBtn"
         >
           <line
@@ -61,7 +62,7 @@
           />
         </svg>
         <div
-          class="bg-gray-900 p-8 text-white lg:text-xl text-right right-0 top-20 lg:top-32 absolute hidden lg:w-56 w-48"
+          class="bg-gray-900 p-8 text-white lg:text-xl text-right right-0 top-20 xl:top-36 absolute hidden lg:w-56 w-48"
           id="navMenu"
         >
           <ul class="flex flex-col gap-8">
@@ -105,14 +106,14 @@
 
     <!-- Hero -->
     <section
-      class="lg:h-[800px] px-8 lg:px-16 py-12 lg:py-20 bg-red-500"
+      class="px-8 lg:px-16 py-12 lg:py-20 bg-red-500"
       id="hero"
     >
       <div
-        class="container flex max-sm:flex-col mx-auto gap-8 lg:gap-16 items-center justify-between h-full"
+        class="container flex max-md:flex-col mx-auto gap-8 lg:gap-16 items-center justify-between h-full"
       >
         <!-- Hero Img -->
-        <div class="lg:w-1/2 h-full flex items-center">
+        <div class="md:w-1/2 lg:w-1/3 xl:w-1/2 xl:p-8 h-full flex items-center">
           <img
             src="https://picsum.photos/1000
         "
@@ -121,11 +122,13 @@
         </div>
 
         <!-- Hero Text -->
-        <div class="flex flex-col lg:w-1/2 text-white gap-8">
-          <h1 class="text-6xl lg:text-8xl font-semibold tracking-tight">
+        <div class="flex flex-col md:w-1/2 lg:w-2/3 xl:w-1/2 text-white gap-8">
+          <h1
+            class="text-6xl lg:text-7xl xl:text-8xl font-semibold tracking-tight"
+          >
             2023<br />Portfolio
           </h1>
-          <p class="lg:text-xl">
+          <p class="xl::text-xl">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quam
             odio sint expedita labore hic culpa eligendi temporibus
             exercitationem, vel voluptatem. Provident nobis recusandae debitis
@@ -143,7 +146,9 @@
       id="graphic"
     >
       <header class="mb-12">
-        <h2 class="text-5xl lg:text-8xl font-semibold tracking-tighter">
+        <h2
+          class="text-5xl lg:text-7xl xl:text-8xl font-semibold tracking-tighter"
+        >
           Graphic Design <br />
           & Illustrations
         </h2>
@@ -219,19 +224,21 @@
       id="motion"
     >
       <div class="flex max-sm:flex-col items-center gap-16 h-full">
-        <header class="lg:w-1/3">
-          <h2 class="text-5xl lg:text-8xl font-semibold tracking-tighter mb-8">
+        <header class="lg:w-1/3 md:w-1/2">
+          <h2
+            class="text-6xl lg:text-7xl xl:text-8xl font-semibold tracking-tighter mb-8"
+          >
             Motion <br />
             Graphics
           </h2>
-          <p class="lg:text-xl">
+          <p class="xl:text-xl">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
             consectetur aliquid quia totam architecto tempora dolor et nemo
             placeat? Tenetur sunt mollitia harum itaque architecto.
           </p>
         </header>
         <!-- Video -->
-        <div class="lg:w-2/3 flex items-center h-full w-full">
+        <div class="lg:w-2/3 flex items-center h-full md:w-1/2">
           <iframe
             class="w-full h-full"
             src="https://www.youtube.com/embed/rTqrpOLbhHQ?si=KZebVk7LxxxbPAQ_?autoplay=1&mute=1"
@@ -262,15 +269,17 @@
           />
         </div>
         <div class="lg:w-1/2">
-          <h2 class="text-5xl lg:text-8xl font-semibold tracking-tighter mb-8">
+          <h2
+            class="text-5xl lg:text-7xl xl:text-8xl font-semibold tracking-tighter mb-8"
+          >
             About me
           </h2>
-          <p class="lg:text-xl">
+          <p class="xl:text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores hic
             quam error velit numquam quo unde minima voluptate molestiae. Id
             molestias laborum at expedita tempore.
           </p>
-          <p class="lg:text-xl">
+          <p class="xl:text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
             dicta, quibusdam culpa in voluptatibus accusantium atque asperiores
             itaque accusamus temporibus saepe ipsa reiciendis illum ut?
@@ -302,20 +311,18 @@
       </p>
     </footer>
 
-    <!-- Navigate te Top button -->
+    <!-- Navigate to Top button -->
     <div class="fixed right-8 bottom-8 cursor-pointer">
       <a href="#">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="64"
-          height="64"
           viewBox="0 0 24 24"
           fill="white"
           stroke="black"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="lucide lucide-arrow-up-circle"
+          class="lucide lucide-arrow-up-circle xl:w-24 w-16"
         >
           <circle
             cx="12"
